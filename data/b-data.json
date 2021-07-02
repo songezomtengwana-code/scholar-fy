@@ -1,0 +1,82 @@
+[{
+        "id": "1",
+        "title": "Mathematics",
+        "author": "Siyavula",
+        "grade": "10",
+        "cost": "15.9MB",
+        "goto": "https://google.com",
+        "img": "/assets/siyavula-math-gr10.jpg"
+    },
+    {
+        "id": "2",
+        "title": "Mathematics",
+        "author": "Pearson Education",
+        "grade": "11",
+        "cost": "R 371,00",
+        "goto": "/",
+        "img": "/assets/caps-crm-gr11.jpeg"
+    },
+    {
+        "id": "3",
+        "title": "Mathematics",
+        "author": "Siyavula",
+        "grade": "11",
+        "cost": "15.9MB",
+        "goto": "/",
+        "img": "/assets/siyavula-maths-gr11.jpg"
+    },
+    {
+        "id": "4",
+        "title": "Life_Sciences",
+        "author": "GMDC",
+        "grade": "11",
+        "cost": "15.9MB",
+        "goto": "/",
+        "img": "/assets/siyavula-ls-gr11.jpg"
+    },
+    {
+        "id": "5",
+        "title": "Mathematics",
+        "author": "Pearson Education",
+        "grade": "12",
+        "cost": "R 274,00",
+        "goto": "/",
+        "img": "/assets/c_r_m_gr10.jpeg"
+    },
+    {
+        "id": "6",
+        "title": "Physica_Sci.",
+        "author": "Siyavula",
+        "grade": "11",
+        "cost": "15.9MB",
+        "goto": "/",
+        "img": "/assets/siyavula-ps-gr11.jpg"
+    },
+    {
+        "id": "7",
+        "title": "Mathematics",
+        "author": "Pearson Education",
+        "grade": "11",
+        "cost": "R317,00",
+        "goto": "/",
+        "img": "/assets/caps-crm-gr10.jpeg"
+    },
+    {
+        "id": "8",
+        "title": "Mathematics",
+        "author": "Caps & Siyavula",
+        "grade": "10",
+        "cost": "2.1MB",
+        "goto": "/",
+        "img": "/assets/caps-siyavula-math-gr10.jpg"
+    },
+    {
+        "id": "9",
+        "title": "Mathematics",
+        "author": "Siyavula",
+        "grade": "9",
+        "cost": "2.1MB",
+        "goto": "/",
+        "img": "/assets/siyavula-maths-gr9.jpg"
+    }
+]

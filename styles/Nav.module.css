@@ -1,0 +1,166 @@
+/* global styles */
+.nav__links__container {
+  display: flex;
+  flex-flow: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+/* global styles */
+/* top nav */
+.nav__container {
+  display: flex;
+  flex-flow: row;
+  position: fixed;
+  padding: 1em 0;
+  justify-content: space-around;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: var(--light);
+  color: var(--dark);
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+.nav__brand {
+  position: relative;
+  font-size: 20px;
+  font-weight: 600;
+}
+.nav__brand::before {
+  content: "Scholary";
+  color: var(--dark);
+}
+.nav__brand::after {
+  content: "fy";
+  color: var(--primary);
+  margin-left: 2px;
+}
+.ham__container {
+  display: grid;
+  place-content: center;
+  background: var(--light);
+  color: var(--primary);
+  border: 1px solid var(--light);
+  outline: none;
+}
+.ham__icon {
+  width: 26px;
+  height: 0.3rem;
+  background: var(--primary);
+  border: 1px solid transparent;
+  border-radius: 3px;
+  position: relative;
+  outline: none;
+  cursor: pointer;
+  transition: all 1s;
+}
+.ham__icon::before,
+.ham__icon::after {
+  content: "";
+  width: 26px;
+  height: 0.2rem;
+  position: absolute;
+  background: var(--primary);
+  border: 1px solid transparent;
+  border-radius: 3px;
+}
+.ham__icon::before {
+  transform: translateY(10px);
+  right: -2px;
+}
+.ham__icon::after {
+  transform: translateY(-10px);
+  left: -2px;
+  bottom: -1px;
+}
+/* from ham to cross design */
+.cross {
+  width: 26px;
+  height: 0.3rem;
+  background: var(--primary);
+  border: 1px solid transparent;
+  border-radius: 3px;
+  position: relative;
+  outline: none;
+  cursor: pointer;
+  transition: all 1s;
+}
+.cross::before,
+.cross::after {
+  content: "";
+  width: 26px;
+  height: 0.2rem;
+  position: absolute;
+  background: var(--primary);
+  border: 1px solid transparent;
+  border-radius: 3px;
+}
+.cross::before {
+  transform: translateY(10px);
+  right: -2px;
+}
+.cross::after {
+  transform: translateY(-10px);
+  left: -2px;
+  bottom: -1px;
+}
+/* from ham to cross design */
+
+/* top nav */
+/* <====================================================> */
+/* ham menu */
+.lower {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  height: 93vh;
+  margin-top: 3.5em;
+  background: var(--dark);
+  color: var(--primary);
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: all 0.5s;
+}
+.links__container {
+  display: flex;
+  flex-flow: column;
+  margin: 5em 0;
+  height: 50vh;
+  justify-content: space-around;
+  padding: 2em;
+}
+.nav__link {
+  display: flex;
+  flex-flow: row;
+  align-items: flex-start;
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+}
+.nav__link::after {
+  content: "";
+  width: 100%;
+  height: 0.1px;
+  position: absolute;
+  background: var(--primary);
+  border: 1px solid transparent;
+  border-radius: 3px;
+  bottom: -30px;
+}
+.nav__link i {
+  margin: 0 10px;
+}
+.nav__link:hover {
+  color: var(--light);
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.nav__links__container .lower footer {
+  display: grid;
+  place-content: center;
+  text-align: center;
+  color: var(--grey);
+  font-size: 12px;
+}
+/* ham menu */

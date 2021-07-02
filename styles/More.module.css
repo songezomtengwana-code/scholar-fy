@@ -1,0 +1,232 @@
+.more {
+  display: grid;
+  align-content: center;
+  background-color: var(--dark);
+  height: 90.4vh;
+}
+.section {
+  font-family: "Nunito", Arial;
+  font-style: normal;
+  font-weight: normal;
+  display: flex;
+  color: var(--white);
+}
+.form {
+  width: 40%;
+}
+.socials {
+  width: 60%;
+}
+.form-display {
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0 50px 0;
+}
+.box {
+  background-color: transparent !important;
+  padding: 1.5em 5em;
+  box-sizing: border-box;
+  border-radius: 25px;
+  width: 90%;
+}
+.box h2 {
+  margin: 20px 0;
+  text-align: center !important;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 25px;
+  color: var(--primary);
+}
+.box input {
+  padding: 8px 0;
+  margin-bottom: 30px;
+}
+.box textarea {
+  height: 80px;
+  padding: 10px 0;
+  margin-bottom: 40px;
+}
+.box input,
+.box textarea {
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: none;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  background-color: var(--opa-white);
+  color: var(--light);
+  font-weight: 500;
+}
+.box textarea {
+  margin-bottom: 30px;
+}
+.box button {
+  width: 100%;
+  cursor: pointer;
+  padding: 10px 0;
+  color: var(--light);
+  background: var(--primary);
+  border: none;
+  text-transform: uppercase;
+  outline: none;
+}
+.box button:hover {
+  animation: glow 1s infinite forwards ease-in-out;
+  transition: 0.8s;
+}
+@keyframes glow {
+  0% {
+    background: linear-gradient(45deg, #b400ff, red);
+  }
+
+  25% {
+    background: linear-gradient(45deg, red, #b400ff);
+  }
+
+  50% {
+    background: linear-gradient(45deg, #b400ff, red);
+  }
+
+  75% {
+    background: linear-gradient(45deg, red, #b400ff);
+  }
+
+  100% {
+    background: linear-gradient(45deg, #b400ff, red);
+  }
+}
+.box form div {
+  position: relative;
+}
+.box form div label {
+  position: absolute;
+  top: 9px;
+  left: 2px;
+  pointer-events: none;
+  color: var(--light);
+  transition: 0.5s;
+}
+.box input:focus ~ label,
+.box textarea:focus ~ label,
+.box input:valid ~ label,
+.box textarea:valid ~ label {
+  top: -15px;
+  left: 0;
+  color: var(--primary);
+  font-weight: bold;
+  font-size: 15px;
+}
+.box input:focus,
+.box textarea:focus,
+.box input:valid,
+.box textarea:valid {
+  transition: 0.5s;
+  border-bottom: 2px solid var(--primary);
+  background-color: transparent !important;
+}
+.contacts {
+  margin: 50px;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.info h2 {
+  margin: 20px 0;
+  text-align: center !important;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 25px;
+  color: var(--white2);
+  margin-bottom: 25px;
+}
+.liltitle {
+  display: flex;
+  flex-flow: row;
+  flex-flow: row;
+}
+.liltitle > p {
+  color: var(--purple);
+  font-weight: 400 !important;
+  font-size: 19px;
+}
+.liltitle p::after {
+  content: "";
+  position: absolute;
+  width: calc(634px - 40px);
+  height: 3px;
+  background: #fff;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row;
+  flex-flow: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.row ul {
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row;
+  flex-flow: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0;
+}
+.row ul li {
+  list-style-type: none;
+  margin: 0 10px;
+  color: #fff;
+}
+.row ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.row ul li a:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+.row ul li a i {
+  font-size: 23px;
+  margin: 0 10px;
+}
+.contacts #copyright {
+  margin: auto;
+}
+.contacts #copyright p {
+  font-weight: 100;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 55px;
+  color: #000;
+}
+@media (max-width: 800px) {
+  .form {
+    width: 100%;
+    padding: 25px 0px;
+  }
+  .box {
+    width: 100%;
+    padding: inherit 4em;
+  }
+  .socials {
+    display: none;
+  }
+}
